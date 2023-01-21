@@ -1,0 +1,4 @@
+PWD_HASH_SALT = b'BuiufjIIUBVy93hbnLfewokjfbnd8821fncvjmope'
+PWD_HASH_ITERATIONS = 100_000
+JWT_SECRET = '$ecret'
+JWT_ALGORITHM = 'HS256'
