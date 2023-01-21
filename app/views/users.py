@@ -3,6 +3,7 @@ from flask_restx import Namespace, Resource
 
 from app.container import user_service
 from app.dao.model.user import UserSchema
+from app.decorators import auth_required
 
 user_ns = Namespace('user')
 
@@ -17,6 +18,7 @@ user_schema = UserSchema()
              }
              )
 class UserViews(Resource):
+    @auth_required
     def get(self, id: int):
         """
         Выдаёт пользователя по id
@@ -27,6 +29,7 @@ class UserViews(Resource):
         except Exception as ex:
             return str(ex), 404
 
+    @auth_required
     @user_ns.response(201, "Updated")
     def patch(self, id: int):
         """
@@ -45,6 +48,7 @@ class UserViews(Resource):
              }
              )
 class UserPasswordViews(Resource):
+    @auth_required
     def put(self):
         """
         Обновление пароля пользователя
