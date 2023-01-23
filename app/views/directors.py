@@ -21,7 +21,7 @@ class DirectorsViews(Resource):
         return director_schema.dump(directors, many=True), 200
 
 
-@director_ns.route('/<int:id>')
+@director_ns.route('/<int:id>/')
 @director_ns.doc(params={'id': 'ID режиссера'},
                  responses={
                      200: 'Success',

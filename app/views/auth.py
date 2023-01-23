@@ -6,7 +6,7 @@ from app.container import auth_service, user_service
 auth_ns = Namespace('auth')
 
 
-@auth_ns.route('/register')
+@auth_ns.route('/register/')
 @auth_ns.doc(responses={201: 'Successful registration',
                         400: 'Bad Request (incorrect input data)'})
 class RegisterViews(Resource):
@@ -27,7 +27,7 @@ class RegisterViews(Resource):
         return "", 201
 
 
-@auth_ns.route('/login')
+@auth_ns.route('/login/')
 @auth_ns.doc(responses={201: 'Updated access_token and refresh_token'})
 class AuthsViews(Resource):
     @auth_ns.response(401, "Unauthorized")

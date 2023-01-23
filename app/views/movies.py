@@ -22,7 +22,7 @@ class MoviesViews(Resource):
         return movie_schema.dump(movies, many=True), 200
 
 
-@movie_ns.route('/<int:id>')
+@movie_ns.route('/<int:id>/')
 @movie_ns.doc(params={'id': 'ID фильма'},
               responses={
                   200: 'Success',
