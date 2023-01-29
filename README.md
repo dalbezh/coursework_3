@@ -25,3 +25,4 @@ ___
 ### Задания со звёздочкой в разработке
 
 * Описана документацию для swagger (эндпоинт /doc)
+* Добавлены тесты для сервисов DirectorService, GenreService и MovieService
