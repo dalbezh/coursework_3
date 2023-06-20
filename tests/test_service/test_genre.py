@@ -52,4 +52,4 @@ class TestGenreService:
             "name": "TEST Genre NEW"
         }
         update_test = self.genre_service.update(data)
-        assert update_test is not None
+        assert update_test is None

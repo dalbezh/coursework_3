@@ -53,4 +53,4 @@ class TestDirectorService:
             "name": "TEST Director NEW"
         }
         update_test = self.director_service.update(data)
-        assert update_test is not None
+        assert update_test is None

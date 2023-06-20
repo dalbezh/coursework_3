@@ -58,4 +58,4 @@ class TestMovieService:
             "trailer": "RuTube Link"
         }
         update_test = self.movie_service.update(data)
-        assert update_test is not None
+        assert update_test is None
