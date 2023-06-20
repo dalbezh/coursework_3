@@ -1,5 +1,10 @@
 # Movie Library API
 ___
+#### Technology stack:
+[![Python](https://img.shields.io/badge/python-v3.9-orange)](https://www.python.org/downloads/release/python-394/)\
+[![Flask](https://img.shields.io/badge/Flask-v2.2.2-blue)](https://flask.palletsprojects.com/en/2.3.x/changes/#version-2-2-2)
+[![flask-restx](https://img.shields.io/badge/FlaskRESTX-v1.0.3-blue)](https://flask-restx.readthedocs.io/en/latest/index.html)
+___
 #### Краткое описание
 API умеет отдавать из БД SQLite данные о фильмах, жанрах и режиссёрах. 
 Реализована регистрация и аутентификация по JWT.
