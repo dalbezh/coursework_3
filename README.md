@@ -1,7 +1,7 @@
 # Movie Library API
-___
+
 #### Technology stack:
-[![Python](https://img.shields.io/badge/python-v3.9-orange)](https://www.python.org/downloads/release/python-394/)\
+[![Python](https://img.shields.io/badge/python-v3.9-orange)](https://www.python.org/downloads/release/python-394/)
 [![Flask](https://img.shields.io/badge/Flask-v2.2.2-blue)](https://flask.palletsprojects.com/en/2.3.x/changes/#version-2-2-2)
 [![flask-restx](https://img.shields.io/badge/FlaskRESTX-v1.0.3-blue)](https://flask-restx.readthedocs.io/en/latest/index.html)
 ___
@@ -32,11 +32,8 @@ ___
 pytest
 ```
 ___
-#### По выполненным критериям
-- [x]  Бизнес логика находится в сервисах
-- [x]  Присутствует слой DAO вокруг моделей
-- [x]  В моделях присутствуют нужные поля
-- [x]  В схемах присутствуют нужные поля и не отдаются пароля
-- [x]  Отношения у моделей установлены
-- [x]  Отношения в сериализаторе сериализованы корректно
+#### По структуре и функционалу приложения
+- [x]  Бизнес логика находится в [сервисах](./app/services)
+- [x]  Присутствует слой [DAO](./app/dao) вокруг [моделей](./app/dao/model)
+- [x]  В схемах присутствуют нужные поля и не отдаются пароли
 - [x]  Коды ответов возвращаются согласно правилам REST
